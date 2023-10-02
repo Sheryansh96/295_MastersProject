@@ -1,0 +1,23 @@
+{
+  "name": "Data-Driven-and-EV-Charging-Stations-Analysis",
+  "version": "1.0.0",
+  "description": "A server to develop APIs and connect to MongoDB",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.17.1",
+    "mongodb": "^6.1.0",
+    "mongoose": "^6.12.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  }
+}
