@@ -2,6 +2,7 @@ require('dotenv').config();
 const express = require("express");
 const mongoose = require("mongoose")
 const app = express();
+const allRoutes = require("./routes/allRoutes");
 
 const mongoString = process.env.DATABASE_URL;
 mongoose.set('strictQuery', false);
@@ -26,3 +27,5 @@ app.use(express.json())
 app.listen(3001, () => {
   console.log(`Server listening on 3001`);
 });
+
+app.use("", allRoutes);
